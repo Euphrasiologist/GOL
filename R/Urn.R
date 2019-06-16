@@ -1,15 +1,12 @@
-
 #' Urn function
 #'
 #' Implementation of the urn game from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
-#' @params Red, number of red balls. Black, number of black balls. Trials, how many trials?
+#' @param number of red/black balls and trial number
 #' @keywords urn, gamesoflife, genetics
 #' @export
 #' @examples
 #' urn(1,1,1000)
 
-library(data.table)
-library(ggplot2)
 
 urn <- function(red, black, trials){
   red <- red

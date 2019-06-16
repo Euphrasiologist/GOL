@@ -2,7 +2,7 @@
 #'
 #' Another implementation of the urn game from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
 #' This time, an example of runaway drift with an unlikely twist.
-#' @params Red, number of red balls. Black, number of black balls. Trials, how many trials?
+#' @param number of red/black balls and trial number
 #' @keywords polyaurn, gamesoflife, genetics
 #' @export
 #' @examples
