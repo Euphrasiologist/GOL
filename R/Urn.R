@@ -1,7 +1,9 @@
 #' Urn function
 #'
 #' Implementation of the urn game from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
-#' @param number of red/black balls and trial number
+#' @param red number of red balls
+#' @param black number of black balls
+#' @param trials number of trials in game
 #' @keywords urn, gamesoflife, genetics
 #' @export
 #' @examples
