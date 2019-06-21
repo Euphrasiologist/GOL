@@ -11,10 +11,8 @@
 #' urn(1,1,1000)
 
 polyaurn <- function(red, black, trials){
-  red <- red
-  black <- black
 
-  dat <- data.frame(trial = 1:trials,
+  dat <- data.table::data.table(trial = 1:trials,
                     colour = vector(length = trials))
 
   for(i in 1:trials){
@@ -27,7 +25,7 @@ polyaurn <- function(red, black, trials){
   }
 
   dat$outcome <- as.numeric(dat$colour == "red")
-  setDT(dat)
+
   dat <- dat[, cum.sum := cumsum(outcome)/trial]
 
 

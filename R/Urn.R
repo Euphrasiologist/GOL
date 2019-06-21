@@ -11,8 +11,6 @@
 
 
 urn <- function(red, black, trials){
-  red <- red
-  black <- black
 
   dat <- data.frame(trial = 1:trials,
                     colour = vector(length = trials))
