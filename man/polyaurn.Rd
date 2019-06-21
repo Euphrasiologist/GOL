@@ -7,7 +7,11 @@
 polyaurn(red, black, trials)
 }
 \arguments{
-\item{number}{of red/black balls and trial number}
+\item{red}{number of red balls}
+
+\item{black}{number of black balls}
+
+\item{trials}{number of trials in game}
 }
 \description{
 Another implementation of the urn game from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
