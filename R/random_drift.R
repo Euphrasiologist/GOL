@@ -9,7 +9,7 @@
 #' @examples
 #' random_drift(red = 10000, black = 10000, trials = 100)
 
-random_drift <- function(red, black, trials){
+random_drift <- function(red, black, trials, show.black = TRUE){
   
   require(data.table); require(ggplot2)
   
@@ -31,9 +31,13 @@ random_drift <- function(red, black, trials){
                                  size = (red + black)))[c(2,1)])
   }
   
-  setDT(dat2)
+  dat2 <- data.table::as.data.table(dat2)
   
-  dat2 <- melt(dat, id.vars = 1)
+  dat2 <- data.table::melt(dat, id.vars = 1)
+  
+  if(!show.black){
+    dat2 <- dat2[dat2$variable == "red",]
+  } 
   
   ggplot(dat2, aes(x = trial, y = value))+
     geom_line(aes(colour = variable))+
