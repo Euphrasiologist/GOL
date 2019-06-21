@@ -31,6 +31,8 @@ random_drift <- function(red, black, trials){
                                  size = (red + black)))[c(2,1)])
   }
   
+  setDT(dat2)
+  
   dat2 <- melt(dat, id.vars = 1)
   
   ggplot(dat2, aes(x = trial, y = value))+
