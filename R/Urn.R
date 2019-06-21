@@ -10,15 +10,19 @@
 #' urn(1,1,1000)
 
 
+
 urn <- function(red, black, trials){
 
-  dat <- data.table::data.table(trial = 1:trials,
+  require(data.table); require(ggplot2)
+  
+  dat <- data.frame(trial = 1:trials,
                     colour = vector(length = trials))
   for(i in 1:trials){
     dat$colour[i] <- sample(x = c(rep("red", red), rep("black", black)), size = 1, replace = T, prob = rep(1/(red+black), sum(red, black)) )
   }
 
   dat$outcome <- as.numeric(dat$colour == "red")
+
   setDT(dat)
   dat <- dat[, cum.sum := cumsum(outcome)/trial]
 

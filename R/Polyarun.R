@@ -11,7 +11,9 @@
 #' urn(1,1,1000)
 
 polyaurn <- function(red, black, trials){
-
+  
+  require(data.table); require(ggplot2)
+  
   dat <- data.table::data.table(trial = 1:trials,
                     colour = vector(length = trials))
 
