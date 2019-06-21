@@ -1,6 +1,6 @@
 #' Random drift function
 #'
-#' Implementation of the urn game from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
+#' Two coloured ball game with entangled probabilities from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
 #' @param red number of red balls
 #' @param black number of black balls
 #' @param trials number of trials in game
@@ -43,8 +43,3 @@ random_drift <- function(red, black, trials){
     xlab(label = "Generation")+
     ylab(label = "Proportion red/black")
 }
-
-
-
-
-

@@ -14,7 +14,7 @@ random_drift(red, black, trials)
 \item{trials}{number of trials in game}
 }
 \description{
-Implementation of the urn game from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
+Two coloured ball game with entangled probabilities from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
 }
 \examples{
 random_drift(red = 10000, black = 10000, trials = 100)
