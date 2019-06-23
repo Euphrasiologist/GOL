@@ -1,6 +1,6 @@
 Package: GOL
 Type: Package
-Title: Functions for exploring ideas in the Games of Life book by Karl Sigmund
+Title: Functions for exploring ideas in Games of Life by Karl Sigmund (ISBN: 978-0198547839)
 Version: 0.1.0
 Author: Max Brown
 Maintainer: Max Brown <max.brown@ed.ac.uk>

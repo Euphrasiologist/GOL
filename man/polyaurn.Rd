@@ -14,7 +14,7 @@ polyaurn(red, black, trials)
 \item{trials}{number of trials in game}
 }
 \description{
-Another implementation of the urn game from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
+Another implementation of the urn game.
 This time, an example of runaway drift with an unlikely twist.
 }
 \examples{

@@ -1,6 +1,6 @@
 #' Polyaurn function
 #'
-#' Another implementation of the urn game from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
+#' Another implementation of the urn game.
 #' This time, an example of runaway drift with an unlikely twist.
 #' @param red number of red balls
 #' @param black number of black balls

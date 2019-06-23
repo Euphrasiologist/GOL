@@ -1,6 +1,6 @@
 #' Random drift function
 #'
-#' Two coloured ball game with entangled probabilities from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
+#' Two coloured ball game with entangled probabilities.
 #' @param red number of red balls
 #' @param black number of black balls
 #' @param trials number of trials in game
@@ -9,7 +9,7 @@
 #' @examples
 #' random_drift(red = 10000, black = 10000, trials = 100)
 
-random_drift <- function(red, black, trials, show.black = TRUE){
+random_drift <- function(red, black, trials, show.black = FALSE){
   
   require(data.table); require(ggplot2)
   
@@ -19,6 +19,7 @@ random_drift <- function(red, black, trials, show.black = TRUE){
   dat[1,] <- c(1, red, black)
   
   for(i in 2:trials){
+    
     if(is.na(dat[i-1,2])){
       dat[i-1,2] <- 0
     } else dat[i-1,2]

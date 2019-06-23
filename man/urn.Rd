@@ -14,7 +14,7 @@ urn(red, black, trials)
 \item{trials}{number of trials in game}
 }
 \description{
-Implementation of the urn game from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
+Implementation of the urn game.
 }
 \examples{
 urn(1,1,1000)

@@ -4,7 +4,7 @@
 \alias{random_drift}
 \title{Random drift function}
 \usage{
-random_drift(red, black, trials)
+random_drift(red, black, trials, show.black = FALSE)
 }
 \arguments{
 \item{red}{number of red balls}
@@ -14,7 +14,7 @@ random_drift(red, black, trials)
 \item{trials}{number of trials in game}
 }
 \description{
-Two coloured ball game with entangled probabilities from Games of Life by Karl Sigmund (ISBN: 978-0198547839)
+Two coloured ball game with entangled probabilities.
 }
 \examples{
 random_drift(red = 10000, black = 10000, trials = 100)
