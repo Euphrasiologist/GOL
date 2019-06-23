@@ -13,7 +13,7 @@ random_drifts(colours = 5, trials, size, rel.freq = NULL)
 
 \item{size}{size of the initial population of balls}
 
-\item{rel.freq}{proportions}
+\item{rel.freq}{starting frequencies for the colours. If NULL, frequencies are drawn from the uniform distribution.}
 }
 \description{
 What happens if we have a population of coloured balls and let them drift?

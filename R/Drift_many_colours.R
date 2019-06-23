@@ -5,7 +5,7 @@
 #' @param colours number of different colours of balls
 #' @param trials the number of trials the game runs for 
 #' @param size size of the initial population of balls
-#' @param rel.freq proportions 
+#' @param rel.freq starting frequencies for the colours. If NULL, frequencies are drawn from the uniform distribution.
 #' @keywords urn, gamesoflife, genetics
 #' @export
 #' @examples
@@ -13,10 +13,13 @@
 
 random_drifts <- function(colours = 5, trials, size, rel.freq = NULL){
   
+  require(data.table); require(ggplot2)
+  
+  
   if(trials < 2){
     stop("Increase number of trials, try 100+")
   }
-  # size must be greater than colours!
+
   if(size < colours){
     stop("Population size must be greater than the number of coloured balls!")
   }
@@ -36,7 +39,7 @@ random_drifts <- function(colours = 5, trials, size, rel.freq = NULL){
   
   # if relative frequencies manually defined
   if(colours != length(rel.freq) & sum(rel.freq) != 1){
-    stop("Relative frequencies of colours must equal the number of colours and equal 1")
+    stop("Relative frequencies of colours must equal the number of colours and sum to 1")
   }
   
   # starting data frame
