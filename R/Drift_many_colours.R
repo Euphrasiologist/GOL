@@ -11,9 +11,6 @@
 #' @examples
 #' random_drifts(colours = 10, trials = 1000, size = 1000)
 
-# test
-random_drifts(colours = 5, trials = 100, size = 100)
-
 random_drifts <- function(colours = 5, trials, size, rel.freq = NULL){
   
   # size must be greater than colours!

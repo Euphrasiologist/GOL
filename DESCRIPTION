@@ -4,8 +4,7 @@ Title: Functions for exploring ideas in Games of Life by Karl Sigmund (ISBN: 978
 Version: 0.1.0
 Author: Max Brown
 Maintainer: Max Brown <max.brown@ed.ac.uk>
-Description: The book covers much ground, from population ecology and chaos, to evolution and sex, to drift.
-It is the hope that some of this can be explored, and that somebody finds the functions interesting!
+Description: The book covers much ground, from population ecology and chaos, to evolution and sex, to drift. It is the hope that some of this can be explored, and that somebody finds the functions interesting!
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
