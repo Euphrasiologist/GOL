@@ -14,6 +14,9 @@
 random_drifts <- function(colours = 5, trials, size, rel.freq = NULL){
   
   # size must be greater than colours!
+  if(size < colours){
+    stop("Population size must be greater than the number of coloured balls!")
+  }
   
   # generate some random numbers
   if(is.null(rel.freq)){
