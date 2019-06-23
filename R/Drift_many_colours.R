@@ -13,6 +13,9 @@
 
 random_drifts <- function(colours = 5, trials, size, rel.freq = NULL){
   
+  if(trials < 2){
+    stop("Increase number of trials, try 100+")
+  }
   # size must be greater than colours!
   if(size < colours){
     stop("Population size must be greater than the number of coloured balls!")
